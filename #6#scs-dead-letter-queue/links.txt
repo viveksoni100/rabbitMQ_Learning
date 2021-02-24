@@ -1,0 +1,3 @@
+http://progressivecoder.com/setting-up-rabbitmq-dead-letter-queue-with-spring-cloud-stream/
+
+https://github.com/dashsaurabh/spring-cloud-stream-rabbitmq-demo/tree/dead-letter-queue-handler
