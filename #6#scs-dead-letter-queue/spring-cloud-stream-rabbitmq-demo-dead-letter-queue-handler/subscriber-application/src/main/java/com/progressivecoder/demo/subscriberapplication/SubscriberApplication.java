@@ -9,19 +9,19 @@ import org.springframework.cloud.stream.annotation.StreamListener;
 @EnableBinding(MessageChannel.class)
 public class SubscriberApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SubscriberApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SubscriberApplication.class, args);
+    }
 
-	@StreamListener(MessageChannel.MESSAGES)
-	public void handleMessage(String message) throws Exception{
+    @StreamListener(MessageChannel.MESSAGES)
+    public void handleMessage(String message) throws Exception {
 
-		System.out.println(message);
+        System.out.println(message);
 
-		if(message.contains("leave"))
-			throw new Exception("Someone wants a vacation! Reject the leave application");
+        if (message.contains("leave"))
+            throw new Exception("Someone wants a vacation! Reject the leave application");
 
-		System.out.println("Subscriber Received Message is: " + message);
-	}
+        System.out.println("Subscriber Received Message is: " + message);
+    }
 
 }
