@@ -12,24 +12,24 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class PublisherApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PublisherApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(PublisherApplication.class, args);
+    }
 
 }
 
 @RestController
 @EnableBinding(Source.class)
-class MessagePublisher{
+class MessagePublisher {
 
-	@Autowired
-	private Source source;
+    @Autowired
+    private Source source;
 
-	@GetMapping(value = "/api/publish")
-	public void sendMessage(){
-		String message = "I want leave";
+    @GetMapping(value = "/api/publish")
+    public void sendMessage() {
+        String message = "I want leave";
 
-		source.output().send(MessageBuilder.withPayload(message).build());
+        source.output().send(MessageBuilder.withPayload(message).build());
 
-	}
+    }
 }
