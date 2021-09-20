@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/remoting-jms.iml" filepath="$PROJECT_DIR$/remoting-jms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-jms-client/remoting-jms-client.iml" filepath="$PROJECT_DIR$/remoting-jms-client/remoting-jms-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remoting-jms-server/remoting-jms-server.iml" filepath="$PROJECT_DIR$/remoting-jms-server/remoting-jms-server.iml" />
+    </modules>
+  </component>
+</project>
